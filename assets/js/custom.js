@@ -40,8 +40,8 @@ jQuery(document).ready(function ($) {
       loop: true,
       nav: true,
       navText: [
-        "<i class='fa-solid fa-angles-left'></i>",
-        "<i class='fa-solid fa-angles-right'></i>",
+        "<i class='bi bi-arrow-left-circle-fill'></i>",
+        "<i class='bi bi-arrow-right-circle-fill'></i>",
       ],
       dots: false,
       touchDrag: false,
