@@ -4339,7 +4339,7 @@ span.counter {
   margin-top: 5px;
 }
 .banner-style-one .banner-details {
-  padding-bottom: 75px;
+  /* padding-bottom: 75px; */
 }
 .banner-style-one .breadcrums {
   border-top: 1px solid #444;
@@ -5257,7 +5257,7 @@ ul.social-medias {
   display: flex;
   border: 1px solid #c1c1c1;
   margin-top: 25px;
-  height: 120px;
+  height: 100px;
 }
 .project-d-detail .data {
   width: 100%;
