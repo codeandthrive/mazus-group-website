@@ -5221,7 +5221,7 @@ ul.social-medias {
 }
 .project-detail-slider .p-d-slider img {
   height: 690px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .project-detail-slider .p-d-slider .owl-dots {
   display: flex;

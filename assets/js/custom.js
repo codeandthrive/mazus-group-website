@@ -16,6 +16,7 @@ jQuery(document).ready(function ($) {
       margin: 12,
       dots: true,
       autoplay: true,
+      loop: true,
       autoplayTimeout: 3000,
       autoplayHoverPause: false,
       responsive: {
@@ -108,7 +109,8 @@ jQuery(document).ready(function ($) {
   // Client Slider
   if ($(".client-slider")[0]) {
     $(".client-slider.owl-carousel").owlCarousel({
-      items: 5,
+      items: 3,
+      loop: true,
       autoplay: true,
       autoplayTimeout: 3000,
       autoplayHoverPause: false,
@@ -197,16 +199,27 @@ jQuery(document).ready(function ($) {
     $("select").niceSelect();
   }
 
+  if ($(".p-d-slider.owl-carousel")[0]) {
+    console.log("HEY");
+    $(".owl-carousel").owlCarousel({
+      items: 1, // Set the number of items to display in the carousel
+      autoplay: true, // Enable auto-sliding
+      autoplayTimeout: 2000, // Set the time between slides in milliseconds
+      autoplayHoverPause: true, // Pause autoplay on hover
+      loop: true,
+    });
+  }
+
   // P-Slider
   if ($(".p-slider.owl-carousel")[0]) {
     $(".p-slider.owl-carousel").owlCarousel({
-      items: 3,
+      items: 1,
       loop: true,
       center: true,
-      // dots:true,
-      // autoplay: true,
-      // autoplayTimeout: 3000,
-      // autoplayHoverPause: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
       responsive: {
         0: {
           items: 1,
