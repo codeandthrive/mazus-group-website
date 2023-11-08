@@ -487,7 +487,7 @@ lightmodeToggle.addEventListener("click", () => {
   lightmode = localStorage.getItem("light-d");
 
   if (lightmode !== "enabled") {
-    enableLightMode();
+    disablelightmode();
   } else {
     disablelightmode();
   }
@@ -496,6 +496,15 @@ lightmodeToggle.addEventListener("click", () => {
 // Preloader
 $(window).on("load", function () {
   $("body").addClass("page-loaded");
+  lightmodeToggle.addEventListener("click", () => {
+    lightmode = localStorage.getItem("light-d");
+
+    if (lightmode !== "enabled") {
+      disablelightmode();
+    } else {
+      disablelightmode();
+    }
+  });
   console.log("loaded");
 });
 
